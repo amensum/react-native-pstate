@@ -1,3 +1,7 @@
 /** @format */
 
-export { default as usePermanentState } from './usePermanentState';
+import { usePermanentState } from './usePermanentState';
+
+export default {
+  usePermanentState
+};

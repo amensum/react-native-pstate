@@ -1,1 +1,1 @@
-var _interopRequireDefault=require("@babel/runtime/helpers/interopRequireDefault");Object.defineProperty(exports,"__esModule",{value:true});Object.defineProperty(exports,"usePermanentState",{enumerable:true,get:function get(){return _usePermanentState.default;}});var _usePermanentState=_interopRequireDefault(require("./usePermanentState"));
+Object.defineProperty(exports,"__esModule",{value:true});exports.default=void 0;var _usePermanentState=require("./usePermanentState");var _default={usePermanentState:_usePermanentState.usePermanentState};exports.default=_default;
