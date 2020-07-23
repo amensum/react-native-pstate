@@ -23,14 +23,13 @@
   },
   "homepage": "https://github.com/amensum/react-native-pstate",
   "dependencies": {
-    "@babel/preset-env": "^7.9.0",
-    "@babel/preset-react": "^7.9.4",
     "@react-native-community/async-storage": "^1.11.0",
     "react": "^16.13.1",
     "react-native": "^0.63.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.0"
+    "@babel/core": "^7.9.0",
+    "metro-react-native-babel-preset": "^0.61.0"
   }
 }
