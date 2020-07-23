@@ -1,6 +1,6 @@
 {
   "name": "react-native-pstate",
-  "version": "0.1.0-prod",
+  "version": "0.1.5",
   "description": "Permanent state hook for React Native",
   "main": "dist/index.js",
   "scripts": {
