@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
 
-export const usePermanentState = (initState) => {
+const usePermanentState = (initState) => {
   const [state, setState] = useState(initState);
   const [mounted, setMounted] = useState(false);
 
@@ -38,4 +38,8 @@ export const usePermanentState = (initState) => {
   };
 
   return [state, setState, unsetState];
+};
+
+export default {
+  usePermanentState,
 };
