@@ -1,13 +1,13 @@
 /** @format */
 
-import { useState, useEffect } from 'react';
+import * as React from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
 
-export default (initState) => {
-  const [state, setState] = useState(initState);
-  const [mounted, setMounted] = useState(false);
+export const usePermanentState = (initState) => {
+  const [state, setState] = React.useState(initState);
+  const [mounted, setMounted] = React.useState(false);
 
-  useEffect(() => {
+  React.useEffect(() => {
     AsyncStorage.getItem('@state').then((json) => {
       const state = JSON.parse(json);
 
@@ -21,7 +21,7 @@ export default (initState) => {
     });
   }, []);
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (mounted) {
       const json = JSON.stringify(state);
 
