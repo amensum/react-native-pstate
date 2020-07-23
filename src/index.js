@@ -1,13 +1,13 @@
 /** @format */
 
-import React, { useEffect, useMemo, useState } from 'react';
+import { useState, useEffect } from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
 
-const usePermanentState = (initState) => {
-  const [state, setState] = React.useState(initState);
-  const [mounted, setMounted] = React.useState(false);
+export const usePermanentState = (initState) => {
+  const [state, setState] = useState(initState);
+  const [mounted, setMounted] = useState(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     AsyncStorage.getItem('@state').then((json) => {
       const state = JSON.parse(json);
 
@@ -21,7 +21,7 @@ const usePermanentState = (initState) => {
     });
   }, []);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (mounted) {
       const json = JSON.stringify(state);
 
@@ -38,8 +38,4 @@ const usePermanentState = (initState) => {
   };
 
   return [state, setState, unsetState];
-};
-
-module.exports = {
-  usePermanentState,
 };

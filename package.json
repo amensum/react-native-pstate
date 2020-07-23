@@ -9,11 +9,9 @@
     "url": "https://github.com/amensum/react-native-pstate.git"
   },
   "keywords": [
+    "react",
     "npm",
     "package"
-  ],
-  "files": [
-    "README.md"
   ],
   "author": "https://github.com/amensum",
   "license": "MIT",
@@ -21,9 +19,11 @@
     "url": "https://github.com/amensum/react-native-pstate/issues"
   },
   "homepage": "https://github.com/amensum/react-native-pstate",
-  "devDependencies": {},
   "dependencies": {
     "@react-native-community/async-storage": "^1.11.0",
     "react": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.10.4"
   }
 }
