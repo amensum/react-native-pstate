@@ -1,1 +1,1 @@
-var _usePermanentState=require("./usePermanentState");
+Object.defineProperty(exports,"__esModule",{value:true});Object.defineProperty(exports,"usePermanentState",{enumerable:true,get:function get(){return _usePermanentState.usePermanentState;}});var _usePermanentState=require("./usePermanentState");
