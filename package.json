@@ -2,9 +2,9 @@
   "name": "react-native-pstate",
   "version": "0.1.0-prod",
   "description": "Permanent state hook for React Native",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "babel src --out-dir ."
+    "build": "babel src --out-dir dist"
   },
   "repository": {
     "type": "git",
