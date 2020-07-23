@@ -1,7 +1,3 @@
 /** @format */
 
-import usePermanentState from './usePermanentState';
-
-export default {
-  usePermanentState: usePermanentState
-};
+import { usePermanentState } from './usePermanentState';
