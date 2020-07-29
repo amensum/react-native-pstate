@@ -37,5 +37,6 @@ export const usePermanentState = (initState) => {
     console.log('[PS] ✕ STORAGE');
   };
 
-  return [state, setState, unsetState];
+  // [permanentState, setPermanentState, unsetPermanentState, isMountedPermanentState]
+  return [state, setState, unsetState, mounted];
 };
